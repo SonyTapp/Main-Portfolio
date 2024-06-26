@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>HTML and CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--THIS JQUERY VERSION NEEDED FOR POPUP-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body style="background-color: rgb(215, 222, 230);">
+
+    <div class="wrapper d-flex align-items-stretch">
+		
+      <nav id="sidebar" class="">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn bte-dark">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+    
+        <h1><a href="index.html" class="p-logo">Portfolio</a></h1>
+    
+        <div style="width: 100%; text-align: center; margin: 5px;">
+          <img src="images/face.jpeg" style="border-radius: 30%; width: 40%; border: 2px solid white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);">
+        </div>
+        
+        <ul class="list-unstyled components mb-5">
+          <li class="active"><a href="index.html"><span class="fa fa-home mr-3"></span>Home</a></li>
+          
+          <!-- Skills Accordion -->
+          <li>
+              <a href="#skillsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-code mr-3"></span>Skills</a>
+              <ul class="collapse list-unstyled" id="skillsSubmenu">
+                  <li><a href="python_Main.html"><span class="fa-brands fa-python mr-3"></span>Python</a></li>
+                  <li><a href="sql_Main.html"><span class="fa fa-database mr-3"></span>SQL</a></li>
+                  <li><a href="html_Main.html"><span class="fa-brands fa-html5 mr-3"></span>HTML and CSS</a></li>
+                  
+              </ul>
+          </li>
+          
+          <!-- Projects Accordion -->
+          <li>
+              <a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span class="fas fa-project-diagram mr-3"></span>Python Projects</a>
+              <ul class="collapse list-unstyled" id="projectsSubmenu">
+                <li><a href="de-duper.html"><span class="fa-solid fa-camera mr-3"></span>Python De-Duplicator</a></li>
+                <li><a href="Flask_calc.html"><span class="fa-solid fa-calculator mr-3"></span>Flask Calculator</a></li>
+                <li><a href="Flask_todo.html"><span class="fa-solid fa-list-check mr-3"></span>Flask To-Do List</a></li>
+                <li><a href="pyhangman.html"><span class="fa-solid fa-gamepad mr-2"></span>Python Hangman</a></li>
+                <li><a href="pycalc.html"><span class="fa-solid fa-calculator mr-3"></span>Python Calculator</a></li>
+                
+            </ul>
+          </li>
+          <li class="active"><a href="about.html"><span class="fas fa-info-circle mr-3"></span>About</a></li>
+      </ul>
+          </li>
+      </ul>
+      
+        <div style="width: 100%; text-align: center;">
+          <a href="https://form.jotform.com/241435217770353"><img src="images/contact1.png" style="border-radius: 50%; width: 70%;" alt="Contact ME"></a>        
+        </div>        
+      
+      </nav>
+
+      <!-- Page Content  -->
+
+      <div id="content" class="p-4 p-md-5 pt-5" style="width: 100%; background-color: rgb(215, 222, 230);">
+        <h5 class="mb-4">HTML and CSS</h5>
+          <img src="images/htmlBanner.png" class="jumbopic" style="width: 100%;"/>          
+          <p class="introtext">
+            <br>
+            HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are essential for crafting web pages. HTML structures content with specialized tags like &lt;strong&gt; for bold text and &lt;hr&gt; for horizontal lines, while CSS controls presentation, including colors, fonts, and layout. They work hand in hand: HTML provides the backbone, defining content, and structure, while CSS enhances visual appeal.
+        </p>
+        <strong style="color: black;">This portfolio was made using html and css.</strong>
+        <p class="introtext">
+          <br>
+          <hr>
+          
+      </p>
+
+        <!--START OF CODE TO CREATE MODAL FORM-->
+        
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-primary btn-sm float-right m-1" data-toggle="modal" data-target="#videoModal" style="text-align: center;">
+          Watch Video about HTML
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Into to HTML</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Replace 'your-video-url.mp4' with your actual video URL -->
+                <video id="modalVideo" width="100%" controls>
+                  <source src="resources/HTMLstrong.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          $('#videoModal').on('shown.bs.modal', function (e) {
+            $("#modalVideo")[0].play(); // Automatically play when opened
+          });
+          
+          $('#videoModal').on('hide.bs.modal', function (e) {
+            $("#modalVideo")[0].pause();  // Pause when the modal is closed
+            $("#modalVideo")[0].currentTime = 0; // Optional: reset video to start
+          });
+        </script>
+    
+        <!--END OF CODE TO CREATE MODAL FORM-->
+
+
+        <div class="container m-0 mt-4 p-0">
+          <object
+            data="resources/HTML5.pdf"
+            type="application/pdf"
+            width="100%"
+            height="1000px"
+            view="Fit"            
+          ></object>
+        </div>
+
+      </div>
+		</div>
+
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
